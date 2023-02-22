@@ -1,13 +1,13 @@
 import React, {forwardRef, PropsWithChildren, useEffect, useState} from 'react';
-import { Box, Tooltip as MTooltip } from '@mui/material';
+import { Tooltip as MTooltip } from '@mui/material';
 
 export type TooltipProps = {
   /**
    * Tooltip placement
    */
-  placement?: 'bottom' | 'top' | 'left' | 'right' | 'bottom-start';
+  placement?: 'bottom' | 'top' | 'left' | 'right';
   /**
-   * Tooltip title. Zero-length titles string are never displayed.
+   * Tooltip text. Zero-length text strings are never displayed.
    */
   text: string | React.ReactNode;
   /**
@@ -18,15 +18,11 @@ export type TooltipProps = {
    * If true, adds an arrow to the tooltip.
    */
   arrow?: boolean;
-  /**
-   * Override or extend the styles applied to the component.
-   */
-  classes?: any;
 }
 
 export const Tooltip: React.FC<PropsWithChildren<TooltipProps>> = forwardRef<any, TooltipProps>(
   (props, ref) => {
-    const { children, text, placement, classes, showOnEllipsis, arrow } = props as PropsWithChildren<TooltipProps>;
+    const { children, text, placement, showOnEllipsis, arrow } = props as PropsWithChildren<TooltipProps>;
 
     const [title, setTitle] = useState(text);
     useEffect(() => {
@@ -54,7 +50,7 @@ export const Tooltip: React.FC<PropsWithChildren<TooltipProps>> = forwardRef<any
         title={title}
         placement={placement}
       >
-        <div style={{ display: 'inline-block' }} onMouseEnter={handleMouseEnter}>{children}</div>
+        <div className="textWrapper" onMouseEnter={handleMouseEnter}>{children}</div>
       </MTooltip>
     );
   }

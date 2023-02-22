@@ -38,6 +38,15 @@
     overflow: hidden;
 }
 
+.responsiveContainer {
+    display: flex;
+    width: 90%;
+}
+.responsiveContainer .textWrapper {
+    width: 33%;
+    margin-right: 24px;
+}
+
 .tooltip {
     font-size: 14px;
     font-weight: bold;
