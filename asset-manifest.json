@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/amirch1/responsive-tooltip/static/css/main.06820fc0.css",
+    "main.js": "/amirch1/responsive-tooltip/static/js/main.1ae1e8d9.js",
+    "static/js/787.084ed242.chunk.js": "/amirch1/responsive-tooltip/static/js/787.084ed242.chunk.js",
+    "index.html": "/amirch1/responsive-tooltip/index.html",
+    "main.06820fc0.css.map": "/amirch1/responsive-tooltip/static/css/main.06820fc0.css.map",
+    "main.1ae1e8d9.js.map": "/amirch1/responsive-tooltip/static/js/main.1ae1e8d9.js.map",
+    "787.084ed242.chunk.js.map": "/amirch1/responsive-tooltip/static/js/787.084ed242.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.06820fc0.css",
+    "static/js/main.1ae1e8d9.js"
+  ]
+}
